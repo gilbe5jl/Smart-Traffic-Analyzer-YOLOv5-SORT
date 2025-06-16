@@ -3,49 +3,41 @@
 This project demonstrates object detection on traffic video footage using the YOLOv5 deep learning model. The system processes a video file frame-by-frame, identifies objects such as cars and pedestrians, and outputs an annotated video with bounding boxes and class labels.
 
 ## Features
-- 🔍 Real-time object detection with YOLOv5
-- 🎞️ Frame-by-frame video processing using OpenCV
-- 📦 Outputs annotated `.mp4` video showing detection results
+- 🔍 Real-time object detection and object tracking with YOLOv8
+- ⚡ ByteTrack tracker integration for consistent object IDs across frames
+- 📦 Outputs annotated `.mp4` video with bounding boxes and tracked IDs
 
 ## Technologies Used
 - Python
-- OpenCV
-- PyTorch
-- YOLOv5 (via `torch.hub`)
+- Ultralytics YOLOv8
+- ByteTrack (via built-in tracker)
+- Google Colab
 
 ## How It Works
-1. Upload a short `.mp4` video to Colab.
-2. YOLOv5 detects objects in each frame.
-3. Detected objects are annotated and written to a new output video.
-4. 
+1. Upload a short `.mp4` traffic video to Colab.
+2. YOLOv8 detects objects and applies ByteTrack tracking.
+3. An annotated output video is saved automatically with bounding boxes and object IDs.
+4. The output can be previewed inline or downloaded.
 
 
 
-## Sample Output
+## Sample Outputs
 
-**Input Video:**
-![input](assets/traffic_input_gif.gif)
+<table>
+  <tr>
+    <td><strong>Input Video</strong></td>
+    <td><strong>YOLOv5 Detection</strong></td>
+    <td><strong>YOLOv8 + ByteTrack</strong></td>
+  </tr>
+  <tr>
+    <td><img src="assets/traffic_input_gif.gif" width="320"/></td>
+    <td><img src="assets/yolo_output_gif.gif" width="320"/></td>
+    <td><img src="assets/yolo_output_2.gif" width="320"/></td>
+  </tr>
+</table>
 
-**Annotated Output with YOLOv5:**
-![output](assets/yolo_output_gif.gif)
-*Detection results showing bounding boxes and class labels over real traffic footage.*
-
-switched from YOLOv5+SORT → YOLOv8+ByteTrack
-
-![output](assets/yolo_output_2.gif)
-
-
-
-
-
-video 1/1 (frame 53/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 142.1ms
-video 1/1 (frame 54/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 1 truck, 145.2ms
-video 1/1 (frame 55/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 2 cars, 1 truck, 149.0ms
-video 1/1 (frame 56/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 145.0ms
-video 1/1 (frame 57/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 1 truck, 149.6ms
-video 1/1 (frame 58/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 158.2ms
-video 1/1 (frame 59/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 142.4ms
-video 1/1 (frame 60/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 145.4ms
+- The YOLOv5 output shows raw object detection with bounding boxes and class labels only.
+- The YOLOv8 + ByteTrack output builds on that by adding real-time object tracking, assigning consistent IDs to moving vehicles across frames.
 ---
 
 ### 🚀 Run It in Colab
