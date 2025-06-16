@@ -34,7 +34,7 @@ This project demonstrates object detection on traffic video footage using the YO
 ---
 
 ### 🚀 Run It in Colab
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/)
+[![Open In Colab](https://colab.research.google.com/drive/1DP6W3bgCwbKlj6UQw8aJOKavvJw8cfBW?usp=sharing)
 
 ---
 
