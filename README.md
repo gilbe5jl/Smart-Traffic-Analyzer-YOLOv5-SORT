@@ -38,6 +38,26 @@ This project demonstrates object detection on traffic video footage using the YO
 
 - The YOLOv5 output shows raw object detection with bounding boxes and class labels only.
 - The YOLOv8 + ByteTrack output builds on that by adding real-time object tracking, assigning consistent IDs to moving vehicles across frames.
+
+
+---
+## Heatmap Visualizations
+
+<table>
+  <tr>
+    <td><strong>Object Density Heatmap</strong></td>
+    <td><strong>Heatmap Overlay on Video Frame</strong></td>
+  </tr>
+  <tr>
+    <td><img src="assets/heatmap.png" width="400"/></td>
+    <td><img src="assets/heatmap_overlay_blurred.png" width="400"/></td>
+  </tr>
+</table>
+
+- The object density heatmap shows where detections were concentrated over the entire video.
+- The frame overlay shows these high-traffic areas blended onto a sample frame, highlighting zones of activity.
+
+---
 ---
 
 ### 🚀 Run It in Colab
