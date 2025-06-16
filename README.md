@@ -60,9 +60,11 @@ This project demonstrates object detection on traffic video footage using the YO
 <table>
   <tr>
     <td><strong>Heatmap Overlay on Every Video Frame</strong></td>
+    <td><strong>Side By Side Comparison</strong></td>
   </tr>
   <tr>
     <td><img src="assets/heatmap_video_gif.gif" width="400"/></td>
+    <td><img src="assets/heatmap_side_gif.gif" width="600"/></td>
   </tr>
 </table>
 
