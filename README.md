@@ -57,6 +57,15 @@ This project demonstrates object detection on traffic video footage using the YO
 - The object density heatmap shows where detections were concentrated over the entire video.
 - The frame overlay shows these high-traffic areas blended onto a sample frame, highlighting zones of activity.
 
+<table>
+  <tr>
+    <td><strong>Heatmap Overlay on Every Video Frame</strong></td>
+  </tr>
+  <tr>
+    <td><img src="assets/heatmap_video_gif.gif" width="400"/></td>
+  </tr>
+</table>
+
 ---
 ---
 
