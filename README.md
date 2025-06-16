@@ -17,7 +17,7 @@ This project demonstrates object detection on traffic video footage using the YO
 1. Upload a short `.mp4` video to Colab.
 2. YOLOv5 detects objects in each frame.
 3. Detected objects are annotated and written to a new output video.
-4. Final result is previewed inline or downloaded.
+4. 
 
 
 
@@ -28,9 +28,24 @@ This project demonstrates object detection on traffic video footage using the YO
 
 **Annotated Output with YOLOv5:**
 ![output](assets/yolo_output_gif.gif)
-
 *Detection results showing bounding boxes and class labels over real traffic footage.*
 
+switched from YOLOv5+SORT → YOLOv8+ByteTrack
+
+![output](assets/yolo_output_2.gif)
+
+
+
+
+
+video 1/1 (frame 53/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 142.1ms
+video 1/1 (frame 54/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 1 truck, 145.2ms
+video 1/1 (frame 55/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 2 cars, 1 truck, 149.0ms
+video 1/1 (frame 56/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 145.0ms
+video 1/1 (frame 57/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 1 truck, 149.6ms
+video 1/1 (frame 58/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 158.2ms
+video 1/1 (frame 59/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 142.4ms
+video 1/1 (frame 60/750) /content/yolov5/traffic_input.mp4: 384x640 1 person, 3 cars, 145.4ms
 ---
 
 ### 🚀 Run It in Colab
