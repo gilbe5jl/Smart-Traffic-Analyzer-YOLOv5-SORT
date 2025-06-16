@@ -1,9 +1,11 @@
 # Smart Traffic Analyzer with YOLOv8
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
-![YOLOv8](https://img.shields.io/badge/YOLOv8-ultralytics-orange?logo=github)
-![Colab](https://img.shields.io/badge/Runs%20in-Google%20Colab-brightgreen?logo=googlecolab)
-![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green?logo=opencv)
-![Status](https://img.shields.io/badge/Status-Prototype-yellow)
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&style=flat-square)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-ultralytics-orange?style=flat-square)
+![Colab](https://img.shields.io/badge/Runs%20in-Google%20Colab-brightgreen?logo=googlecolab&style=flat-square)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green?logo=opencv&style=flat-square)
+![Status](https://img.shields.io/badge/Status-Prototype-yellow?style=flat-square)
+![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![Built by Jalen Gilbert](https://img.shields.io/badge/Built%20by-Jalen%20Gilbert-blueviolet?style=flat-square)
 
 This project demonstrates object detection and tracking on traffic video footage using the YOLOv8 deep learning model. The system processes a video file frame-by-frame, identifies objects such as vehicles and pedestrians, and outputs annotated videos with bounding boxes, class labels, and persistent tracking IDs. Additional visualizations such as heatmaps are generated to highlight high-traffic areas over time.
 
